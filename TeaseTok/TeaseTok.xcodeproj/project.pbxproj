@@ -10,6 +10,12 @@
 		04F63F21275E2CC700CC5D66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F63F20275E2CC700CC5D66 /* AppDelegate.swift */; };
 		04F63F23275E2CC800CC5D66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F63F22275E2CC800CC5D66 /* Assets.xcassets */; };
 		04F63F26275E2CC800CC5D66 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F63F24275E2CC800CC5D66 /* MainMenu.xib */; };
+		04F63F2F275E2D5400CC5D66 /* AppPersistentVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F63F2E275E2D5400CC5D66 /* AppPersistentVariables.swift */; };
+		04F63F32275E2D6C00CC5D66 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F63F31275E2D6C00CC5D66 /* Router.swift */; };
+		04F63F38275E2DBA00CC5D66 /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F63F36275E2DBA00CC5D66 /* MainScreenController.swift */; };
+		04F63F39275E2DBA00CC5D66 /* MainScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F63F37275E2DBA00CC5D66 /* MainScreenController.xib */; };
+		04F63F3C275E2DFF00CC5D66 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F63F3B275E2DFF00CC5D66 /* NibLoadable.swift */; };
+		50DD6A2158E3ACE1D24793C2 /* Pods_TeaseTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E11651BF36C2C8BBD438A1D /* Pods_TeaseTok.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +24,15 @@
 		04F63F22275E2CC800CC5D66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F63F25275E2CC800CC5D66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		04F63F27275E2CC800CC5D66 /* TeaseTok.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TeaseTok.entitlements; sourceTree = "<group>"; };
+		04F63F2E275E2D5400CC5D66 /* AppPersistentVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPersistentVariables.swift; sourceTree = "<group>"; };
+		04F63F31275E2D6C00CC5D66 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		04F63F36275E2DBA00CC5D66 /* MainScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenController.swift; sourceTree = "<group>"; };
+		04F63F37275E2DBA00CC5D66 /* MainScreenController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenController.xib; sourceTree = "<group>"; };
+		04F63F3B275E2DFF00CC5D66 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		04F63F3D275E2E2900CC5D66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0E11651BF36C2C8BBD438A1D /* Pods_TeaseTok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeaseTok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2638C6F4139F3643948C2A24 /* Pods-TeaseTok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeaseTok.debug.xcconfig"; path = "Target Support Files/Pods-TeaseTok/Pods-TeaseTok.debug.xcconfig"; sourceTree = "<group>"; };
+		36DC52BD81D7685BDE3D5BE3 /* Pods-TeaseTok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeaseTok.release.xcconfig"; path = "Target Support Files/Pods-TeaseTok/Pods-TeaseTok.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DD6A2158E3ACE1D24793C2 /* Pods_TeaseTok.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +52,8 @@
 			children = (
 				04F63F1F275E2CC700CC5D66 /* TeaseTok */,
 				04F63F1E275E2CC700CC5D66 /* Products */,
+				56A69323030346914CEDB58D /* Pods */,
+				6640DAA1FBC7B8F55157391F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,12 +68,84 @@
 		04F63F1F275E2CC700CC5D66 /* TeaseTok */ = {
 			isa = PBXGroup;
 			children = (
-				04F63F20275E2CC700CC5D66 /* AppDelegate.swift */,
-				04F63F22275E2CC800CC5D66 /* Assets.xcassets */,
-				04F63F24275E2CC800CC5D66 /* MainMenu.xib */,
+				04F63F3D275E2E2900CC5D66 /* Info.plist */,
 				04F63F27275E2CC800CC5D66 /* TeaseTok.entitlements */,
+				04F63F2D275E2D4D00CC5D66 /* Utils */,
+				04F63F30275E2D6300CC5D66 /* BaseObjects */,
+				04F63F35275E2DA700CC5D66 /* MainScreenModule */,
+				04F63F33275E2D8400CC5D66 /* SupportingFiles */,
+				04F63F34275E2D9300CC5D66 /* Resources */,
+				04F63F3A275E2DEE00CC5D66 /* Extensions */,
 			);
 			path = TeaseTok;
+			sourceTree = "<group>";
+		};
+		04F63F2D275E2D4D00CC5D66 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04F63F2E275E2D5400CC5D66 /* AppPersistentVariables.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		04F63F30275E2D6300CC5D66 /* BaseObjects */ = {
+			isa = PBXGroup;
+			children = (
+				04F63F31275E2D6C00CC5D66 /* Router.swift */,
+			);
+			path = BaseObjects;
+			sourceTree = "<group>";
+		};
+		04F63F33275E2D8400CC5D66 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				04F63F20275E2CC700CC5D66 /* AppDelegate.swift */,
+				04F63F24275E2CC800CC5D66 /* MainMenu.xib */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		04F63F34275E2D9300CC5D66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04F63F22275E2CC800CC5D66 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04F63F35275E2DA700CC5D66 /* MainScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				04F63F36275E2DBA00CC5D66 /* MainScreenController.swift */,
+				04F63F37275E2DBA00CC5D66 /* MainScreenController.xib */,
+			);
+			path = MainScreenModule;
+			sourceTree = "<group>";
+		};
+		04F63F3A275E2DEE00CC5D66 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04F63F3B275E2DFF00CC5D66 /* NibLoadable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		56A69323030346914CEDB58D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2638C6F4139F3643948C2A24 /* Pods-TeaseTok.debug.xcconfig */,
+				36DC52BD81D7685BDE3D5BE3 /* Pods-TeaseTok.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6640DAA1FBC7B8F55157391F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E11651BF36C2C8BBD438A1D /* Pods_TeaseTok.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F63F2A275E2CC800CC5D66 /* Build configuration list for PBXNativeTarget "TeaseTok" */;
 			buildPhases = (
+				A1993C966B7517DFC8E6DFAB /* [CP] Check Pods Manifest.lock */,
 				04F63F19275E2CC700CC5D66 /* Sources */,
 				04F63F1A275E2CC700CC5D66 /* Frameworks */,
 				04F63F1B275E2CC700CC5D66 /* Resources */,
+				B83813CC209D83D7DAE228D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -116,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F63F39275E2DBA00CC5D66 /* MainScreenController.xib in Resources */,
 				04F63F23275E2CC800CC5D66 /* Assets.xcassets in Resources */,
 				04F63F26275E2CC800CC5D66 /* MainMenu.xib in Resources */,
 			);
@@ -123,11 +216,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A1993C966B7517DFC8E6DFAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeaseTok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B83813CC209D83D7DAE228D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeaseTok/Pods-TeaseTok-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeaseTok/Pods-TeaseTok-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeaseTok/Pods-TeaseTok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04F63F19275E2CC700CC5D66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F63F2F275E2D5400CC5D66 /* AppPersistentVariables.swift in Sources */,
+				04F63F32275E2D6C00CC5D66 /* Router.swift in Sources */,
+				04F63F38275E2DBA00CC5D66 /* MainScreenController.swift in Sources */,
+				04F63F3C275E2DFF00CC5D66 /* NibLoadable.swift in Sources */,
 				04F63F21275E2CC700CC5D66 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +402,7 @@
 		};
 		04F63F2B275E2CC800CC5D66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2638C6F4139F3643948C2A24 /* Pods-TeaseTok.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -273,6 +413,7 @@
 				DEVELOPMENT_TEAM = XKX3GF5DM3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeaseTok/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -290,6 +431,7 @@
 		};
 		04F63F2C275E2CC800CC5D66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36DC52BD81D7685BDE3D5BE3 /* Pods-TeaseTok.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,6 +442,7 @@
 				DEVELOPMENT_TEAM = XKX3GF5DM3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeaseTok/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
