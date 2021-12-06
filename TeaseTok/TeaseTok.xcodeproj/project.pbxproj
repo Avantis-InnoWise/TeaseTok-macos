@@ -15,6 +15,10 @@
 		04F63F38275E2DBA00CC5D66 /* MainScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F63F36275E2DBA00CC5D66 /* MainScreenController.swift */; };
 		04F63F39275E2DBA00CC5D66 /* MainScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F63F37275E2DBA00CC5D66 /* MainScreenController.xib */; };
 		04F63F3C275E2DFF00CC5D66 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F63F3B275E2DFF00CC5D66 /* NibLoadable.swift */; };
+		04F63F4F275E4FE900CC5D66 /* NSButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F63F4E275E4FE900CC5D66 /* NSButton+Extension.swift */; };
+		04F63F53275E508F00CC5D66 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F63F52275E508F00CC5D66 /* LocalizationService.swift */; };
+		04F63F58275E519000CC5D66 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F63F57275E519000CC5D66 /* Localized.swift */; };
+		04F63F5B275E521D00CC5D66 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F63F59275E521D00CC5D66 /* Localizable.strings */; };
 		50DD6A2158E3ACE1D24793C2 /* Pods_TeaseTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E11651BF36C2C8BBD438A1D /* Pods_TeaseTok.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,10 @@
 		04F63F37275E2DBA00CC5D66 /* MainScreenController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenController.xib; sourceTree = "<group>"; };
 		04F63F3B275E2DFF00CC5D66 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		04F63F3D275E2E2900CC5D66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04F63F4E275E4FE900CC5D66 /* NSButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+Extension.swift"; sourceTree = "<group>"; };
+		04F63F52275E508F00CC5D66 /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
+		04F63F57275E519000CC5D66 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		04F63F5A275E521D00CC5D66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0E11651BF36C2C8BBD438A1D /* Pods_TeaseTok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeaseTok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2638C6F4139F3643948C2A24 /* Pods-TeaseTok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeaseTok.debug.xcconfig"; path = "Target Support Files/Pods-TeaseTok/Pods-TeaseTok.debug.xcconfig"; sourceTree = "<group>"; };
 		36DC52BD81D7685BDE3D5BE3 /* Pods-TeaseTok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeaseTok.release.xcconfig"; path = "Target Support Files/Pods-TeaseTok/Pods-TeaseTok.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +82,7 @@
 				04F63F30275E2D6300CC5D66 /* BaseObjects */,
 				04F63F35275E2DA700CC5D66 /* MainScreenModule */,
 				04F63F33275E2D8400CC5D66 /* SupportingFiles */,
+				04F63F50275E507600CC5D66 /* Services */,
 				04F63F34275E2D9300CC5D66 /* Resources */,
 				04F63F3A275E2DEE00CC5D66 /* Extensions */,
 			);
@@ -126,8 +135,27 @@
 			isa = PBXGroup;
 			children = (
 				04F63F3B275E2DFF00CC5D66 /* NibLoadable.swift */,
+				04F63F4E275E4FE900CC5D66 /* NSButton+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04F63F50275E507600CC5D66 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04F63F51275E507F00CC5D66 /* LocalizationService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04F63F51275E507F00CC5D66 /* LocalizationService */ = {
+			isa = PBXGroup;
+			children = (
+				04F63F57275E519000CC5D66 /* Localized.swift */,
+				04F63F52275E508F00CC5D66 /* LocalizationService.swift */,
+				04F63F59275E521D00CC5D66 /* Localizable.strings */,
+			);
+			path = LocalizationService;
 			sourceTree = "<group>";
 		};
 		56A69323030346914CEDB58D /* Pods */ = {
@@ -136,7 +164,6 @@
 				2638C6F4139F3643948C2A24 /* Pods-TeaseTok.debug.xcconfig */,
 				36DC52BD81D7685BDE3D5BE3 /* Pods-TeaseTok.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -159,6 +186,7 @@
 				04F63F19275E2CC700CC5D66 /* Sources */,
 				04F63F1A275E2CC700CC5D66 /* Frameworks */,
 				04F63F1B275E2CC700CC5D66 /* Resources */,
+				04F63F56275E50BD00CC5D66 /* SwiftGen */,
 				B83813CC209D83D7DAE228D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -209,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F63F39275E2DBA00CC5D66 /* MainScreenController.xib in Resources */,
+				04F63F5B275E521D00CC5D66 /* Localizable.strings in Resources */,
 				04F63F23275E2CC800CC5D66 /* Assets.xcassets in Resources */,
 				04F63F26275E2CC800CC5D66 /* MainMenu.xib in Resources */,
 			);
@@ -217,6 +246,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		04F63F56275E50BD00CC5D66 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftGen/bin/swiftgen\n";
+		};
 		A1993C966B7517DFC8E6DFAB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,10 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F63F53275E508F00CC5D66 /* LocalizationService.swift in Sources */,
+				04F63F58275E519000CC5D66 /* Localized.swift in Sources */,
 				04F63F2F275E2D5400CC5D66 /* AppPersistentVariables.swift in Sources */,
 				04F63F32275E2D6C00CC5D66 /* Router.swift in Sources */,
 				04F63F38275E2DBA00CC5D66 /* MainScreenController.swift in Sources */,
 				04F63F3C275E2DFF00CC5D66 /* NibLoadable.swift in Sources */,
+				04F63F4F275E4FE900CC5D66 /* NSButton+Extension.swift in Sources */,
 				04F63F21275E2CC700CC5D66 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +330,14 @@
 				04F63F25275E2CC800CC5D66 /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		04F63F59275E521D00CC5D66 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F63F5A275E521D00CC5D66 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -407,6 +465,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TeaseTok/TeaseTok.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -436,6 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TeaseTok/TeaseTok.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

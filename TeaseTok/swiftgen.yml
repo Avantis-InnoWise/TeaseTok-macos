@@ -1,0 +1,5 @@
+strings:
+  inputs: TeaseTok/Services/LocalizationService/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: TeaseTok/Services/LocalizationService/Localized.swift

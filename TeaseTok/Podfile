@@ -7,4 +7,5 @@ target 'TeaseTok' do
 
   # Pods for TeaseTok
     pod 'SnapKit' 
+    pod 'SwiftGen'
 end

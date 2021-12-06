@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TeaseTok
+
+  Created by mac on 6.12.21.
+  
+*/
+
+"backTitle" = "Back";
+"fwTitle" = "Forward";
+"homeTitle" = "Homepage";
+"appTitle" = "TeaseTok";
